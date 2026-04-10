@@ -1,17 +1,20 @@
-import HeroSlider from '@/components/HeroSlider'
-import HomeCategory from '@/components/HomeCategory'
-import React from 'react'
-import { View } from 'react-native'
+import HeroSlider from '@/components/HeroSlider';
+import HomeCategory from '@/components/HomeCategory';
+import HomeProduct from '@/components/HomeProduct';
+import React from 'react';
+import { ScrollView } from 'react-native';
+
 
 
 const index = () => {
   return (
-    <View style={{
+    <ScrollView style={{
       flex: 1,
     }}>
       <HeroSlider />
       <HomeCategory />
-    </View>
+      <HomeProduct />
+    </ScrollView>
   )
 }
 
